@@ -49,4 +49,4 @@ $ npmlink-cp <path to package>...
 ```
 
 ## Footnotes
-<span id="f1"><sup>[1]</sup></span>: `bundledDependencies` are not yet supported.
+<span id="f1">[1]</span> `bundledDependencies` are not yet supported.
