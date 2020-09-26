@@ -2,7 +2,7 @@
 
 An extremely lightweight (less than 100 lines of code) but powerful Node.js tool 
 that simulates `npm link` by copying the files using the same rules of 
-filtering than `npm publish` and `npm install` use[1].
+filtering than `npm publish` and `npm install` use<sup>[[1]](#f1)</sup>.
 
 It's all done in the code without any third dependencies (but it needs Node.js v10+)
 
@@ -45,7 +45,8 @@ $ npm install -g npmlink-cp
 ## Usage
 
 ```bash
-$ npmlink-cp <path to package>
+$ npmlink-cp <path to package>...
 ```
 
-[1]: `bundledDependencies` are not yet supported.
+## Footnotes
+<sup>[1]</sup>: `bundledDependencies` are not yet supported.
