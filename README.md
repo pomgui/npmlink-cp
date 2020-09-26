@@ -4,7 +4,7 @@ An extremely lightweight (less than 100 lines of code) but powerful Node.js tool
 that simulates `npm link` by copying the files using the same rules of 
 filtering than `npm publish` and `npm install` use<sup>[[1]](#f1)</sup>.
 
-It's all done in the code without any third dependencies (but it needs Node.js v10+)
+It's all done in the code without any third dependencies<sup>[[2]](#f2)</sup>
 
 ## Why?
 There are situations when your awesome-package becomes unstable using `npm link` when you tries to use a library of your own that it's not as mature as you'd like, so you need to make one or two fixes on it once a while.
@@ -49,4 +49,5 @@ $ npmlink-cp <path to package>...
 ```
 
 ## Footnotes
-<span id="f1">[1]</span> `bundledDependencies` are not yet supported.
+<span id="f1">[1]:</span> `bundledDependencies` are not yet supported.
+<span id="f2">[2]:</span> NodeJs 10+ is required, and there are devDependencies only to execute the tests.
