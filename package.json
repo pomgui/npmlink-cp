@@ -1,0 +1,28 @@
+{
+  "name": "npmlink-cp",
+  "version": "0.1.0",
+  "description": "Simulates npm link by copying the filtered files using the same rules than npm publish/npm install",
+  "scripts": {
+    "test": "jasmine",
+    "test:cover": "nyc jasmine"
+  },
+  "bin": {
+    "npmlink-cp": "./index.js"
+  },
+  "keywords": [ "npmlink", "npm", "link", "npm-link" ],
+  "files": [ "index.js", "lib/**/*.js" ],
+  "bugs": {
+    "url": "https://github.com/pomgui/npmlink-cp/issues"
+  },
+  "author": "Wilfredo <wpomier@pomgui.com> (https://github.com/pomgui)",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pomgui/npmlink-cp.git"
+  },
+  "devDependencies": {
+    "jasmine": "^3.6.1",
+    "mock-fs": "^4.13.0",
+    "nyc": "^15.1.0"
+  }
+}
