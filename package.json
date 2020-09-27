@@ -9,8 +9,16 @@
   "bin": {
     "npmlink-cp": "./index.js"
   },
-  "keywords": [ "npmlink", "npm", "link", "npm-link" ],
-  "files": [ "index.js", "lib/**/*.js" ],
+  "keywords": [
+    "npmlink",
+    "npm",
+    "link",
+    "npm-link"
+  ],
+  "files": [
+    "index.js",
+    "lib/**/*.js"
+  ],
   "bugs": {
     "url": "https://github.com/pomgui/npmlink-cp/issues"
   },
