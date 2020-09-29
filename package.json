@@ -1,6 +1,6 @@
 {
   "name": "npmlink-cp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simulates npm link by copying the filtered files using the same rules than npm publish/npm install",
   "scripts": {
     "test": "jasmine",
