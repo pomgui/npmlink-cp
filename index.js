@@ -11,12 +11,12 @@ const
     for (let i = 2; i < process.argv.length; i++) {
         const dir = process.argv[i];
         if (!fs.statSync(dir).isDirectory())
-            console.warn(`WARNING: "${dir}" not processed, it's not a directory!`);
+            process.stderr.write(`WARNING: "${dir}" not processed, it's not a directory!\n`);
         else try {
-            console.time(dir);
+            const start = Date.now();
             const app = new NpmLinkCp(dir);
-            app.process();
-            console.timeEnd(dir);
+            const n = app.process();
+            process.stderr.write(dir + ': ' + n + ' files copied in ' + (Date.now() - start) + 'ms\n');
         } catch (e) {
             console.error(e.message);
             process.exit(2);
